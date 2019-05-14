@@ -1,6 +1,7 @@
 const handleHTTP = (request, response) =>
 {
-	response.send('Hello World');
+	const query = request.query; 
+	response.send(`x + y = result`);
 }
 
 module.exports = handleHTTP;
